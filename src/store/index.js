@@ -40,30 +40,16 @@ export default createStore({
         Telefono:"123-456-7890",
         email:"fer@test.com",
         descripcion:"Pastel de tres leches con adorno de feliz cumpleaños mamá",
-        adornos:{
-          vela:"De numero",
-          cantidad: 2
-        },
-        sabores:{
-          primero:"Vainilla",
-          segundo:"Fresa",
-          tercero:"Chocolate"
-        }
+        adornos:"Numero,2",
+        sabores:"Fresa,Chocolate,Vainilla"
       },
       {
         Nombre:"Jorge Maicena",
         Telefono:"645-123-9612",
         email:"jorge@test.com",
         descripcion:"Pastel de tres leches con adorno de boda",
-        adornos:{
-          vela:"De novios",
-          cantidad: 3
-        },
-        sabores:{
-          primero:"Vainilla",
-          segundo:"",
-          tercero:""
-        }
+        adornos:"Numero,5",
+        sabores:"Fresa"
       },
     ]
   },
@@ -113,6 +99,7 @@ export default createStore({
     },
   },
   actions: {
+    
   },
   modules: {
   }

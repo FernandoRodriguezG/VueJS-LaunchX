@@ -9,11 +9,8 @@
                 {{p.Telefono}} - 
                 {{p.email}} - <br>
                 {{p.descripcion}} <br>
-                {{p.adornos.vela}} -- 
-                {{p.adornos.cantidad}} <br>
-                {{p.sabores.primero}} - 
-                {{p.sabores.segundo}} - 
-                {{p.sabores.tercero}} <br> <br>
+                {{p.adornos}} --
+                {{p.sabores}} - <br> <br>
             </li>
             
         </ul>

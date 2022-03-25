@@ -11,23 +11,16 @@
          Descripcion general del pastel:<input type="text" id="desc" v-model="$store.state.pedidos.descripcion"><br>
 
          
-        Tipo de vela:
-        <input type="text" id="velas" v-model="$store.state.pedidos.adornos"><br>
-        Cantidad de velas:<input type="text" id="cantvela" v-model="$store.state.pedidos.adornos"><br>
-
-
-
-        En caso de no querer los tres sabores, solo llenar los que requieras: <br>
-        Primer sabor:<input type="text" id="firstSabor" v-model="$store.state.pedidos.sabores"><br>
-        Segundo sabor:<input type="text" id="segSabor" v-model="$store.state.pedidos.sabores"><br>
-        Sabor sabor:<input type="text" id="thirdSabor" v-model="$store.state.pedidos.sabores"><br>
+        Tipo y cantidad de velas:<input type="text" id="cantvela" v-model="$store.state.pedidos.adornos"><br>
+        Separa por comas los sabores que desees combinar: <br>
+        Sabor(es):<input type="text" id="firstSabor" v-model="$store.state.pedidos.sabores"><br>
         <button @click="$store.commit('addPedido',
-        {Nombre:$store.state.adornos.Nombre,
+        {Nombre:$store.state.pedidos.Nombre,
         Telefono:$store.state.pedidos.Telefono,
         email:$store.state.pedidos.email,
         descripcion:$store.state.pedidos.email,
-        adornos: $store.state.pedidos.adornos.vela,
-        sabores: $store.state.pedidos.sabores.segundo
+        adornos: $store.state.pedidos.adornos,
+        sabores: $store.state.pedidos.sabores
         })">
         Hacer pedido</button>
         
